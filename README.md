@@ -1,6 +1,6 @@
 # CAFETERIA
-A little something i did for a school project
-Still in development (hopefully)
+####### A little something i did for a school project
+####### Still in development (hopefully)
 
 ## FEATURES
 1. Student login
