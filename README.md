@@ -2,6 +2,11 @@
 - A little something i did for a school project
 - Still in development (hopefully)
 
+## TOOLS
+HTML
+CSS
+JAVASCRIPT
+
 ## FEATURES
 1. Student login
 2. Staff login
