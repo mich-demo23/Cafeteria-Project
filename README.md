@@ -1,4 +1,5 @@
 # CAFETERIA
+![Screenshot (83)](https://github.com/mich-demo23/Cafeteria-Project/assets/138993304/82dad8c9-1a28-45c5-ad01-64b4a772cc40)
 - A little something i did for a school project
 - Still in development (hopefully)
 - Any form of contribution is highly appreciated
@@ -19,6 +20,7 @@
 2. Clone the project in your repository
 3. Open project in code editor
 4. Run from "index.html" 
+
 
 
 
