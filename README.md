@@ -18,7 +18,7 @@
 ## HOW TO USE THIS REPO
 1. Fork the project
 2. Clone the project in your repository
-3. Open project in code editor
+3. Open "Cafeteria" in code editor
 4. Run from "index.html" 
 
 
