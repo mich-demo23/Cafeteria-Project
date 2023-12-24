@@ -1,4 +1,4 @@
-#CAFETERIA
+# CAFETERIA
 
 ### A little something i did for a school project
 
