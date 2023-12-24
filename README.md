@@ -1,6 +1,7 @@
 # CAFETERIA
 - A little something i did for a school project
 - Still in development (hopefully)
+- Any form of contribution is highly appreciated
 
 ## TOOLS
 - HTML
@@ -18,6 +19,7 @@
 2. Clone the project
 3. Open project in code editor
 4. Run from "index.html" 
+
 
 
 
