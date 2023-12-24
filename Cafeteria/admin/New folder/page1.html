@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Page 1</title>
+</head>
+<body>
+  <input type="text" id="inputField1" placeholder="Enter value">
+  <input type="text" id="inputField2" placeholder="Enter value">
+
+  <button onclick="storeValue()">Store Value</button>
+
+  <script>
+    function storeValue() {
+      var inputValue1 = document.getElementById("inputField1").value;
+      var inputValue2 = document.getElementById("inputField2").value;
+      localStorage.setItem("storedValue1", inputValue1);
+      localStorage.setItem("storedValue2", inputValue2);
+      window.location.href = "page2.html";
+    }
+  </script>
+</body>
+</html>

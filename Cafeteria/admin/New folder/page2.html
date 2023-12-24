@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Page 2</title>
+</head>
+<body>
+  <div id="displayValue1"></div>
+  <input type="text" name="" id="displayValue">
+  <div id="displayValue2"></div>
+  
+
+  <script>
+    var storedValue1 = localStorage.getItem("storedValue1");
+    var storedValue2 = localStorage.getItem("storedValue2");
+    var displayDiv1 = document.getElementById("displayValue1");
+    var displayDiv2 = document.getElementById("displayValue2");
+    
+    if (storedValue1) {
+      displayDiv1.textContent = "Stored Value: " + storedValue1;
+    //   alert("Number of servings updated");
+    } else {
+      displayDiv.textContent = "No value stored";
+    }
+   
+  </script>
+</body>
+</html>

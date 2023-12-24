@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ 
+
+    <title>Student Login</title>
+    <link rel="stylesheet" href="./index.css"> 
+</head>
+<body>
+   <div class="container">
+    <div class="left-span">
+       <div class="left-span-container">
+           <a href="https://babcock.edu.ng" target="_blank">
+           <img src="./UI/babcock logo.jpg" alt="logo" class="logo-login"></a>
+           <h3>BABCOCK UNIVERSITY</h3>
+           <h2>CAFETERIA SERVICES</h2>
+           <p>We want to make it easy for our students and staff to access the cafeteria services as easy as possible</p>
+       </div>
+       </div>
+       <div class="right-span">
+           <div class="right-span-container">
+           <p class="login-text">STUDENT LOGIN</p>
+           <form action="./profile.html" class="login-details">
+               
+               <div class="login-input">
+               <input type="text" name="matric" id="matric" placeholder="Matric No" class="matric" required>  
+               <br>
+               <input type="password" name="password" id="password"  placeholder="Password" class="password" required>
+               </div>
+               <a href="https://babcock.edu.ng" target="_blank" class="forgotten-password">Forgotten password</a>
+                <br>
+                
+                <button id="" class="login-submit">LOGIN
+                </button> <br>
+                <!-- <i class='bx-fw bx bxl-facebook-square'></i> -->
+                
+            </form>
+            </div>
+        </div>
+     
+   </div>
+   <script>
+       const submit = document.getElementById('button')
+       const matric = document.getElementById("matric");
+       const password = document.getElementById("password");
+
+
+       submit.addEventListener('click', event => {
+            event.preventDefault();
+
+            validateInput();
+       });
+
+
+       const setError = (element, message) => {
+           const inputControl = element.parentElement;
+           const errorDisplay = inputControl.querySelector('.error');
+
+            errorDisplay.innerText = message;
+            inputControl.classList.add('error');     
+            inputControl.classList.remove('success');     
+
+       }
+            const setSuccess = (element  ) => {
+           const inputControl = element.parentElement;
+           const errorDisplay = inputControl.querySelector('.error');
+
+            errorDisplay.innerText = '';
+            inputControl.classList.add('success');     
+            inputControl.classList.remove('error');     
+
+       }
+       
+       const validateInput = () => {
+           const matricvalue = matric.value.trim();
+           const passwordvalue = password.value.trim();
+
+            if(matricvalue === ''){
+                    setError(matric, "Matric Number is required");
+            }else{
+                setSuccess(matric);
+            }
+            
+            if(passwordvalue === ''){
+                    setError(password, "password is required");
+            }else if(passwordvalue != 'password'){
+                setError(password, 'passwords do not match')
+            }
+            else { 
+                setSuccess(password);
+            }
+
+       }
+
+
+   </script>
+    
+</body>
+</html>
