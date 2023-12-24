@@ -3,9 +3,9 @@
 - Still in development (hopefully)
 
 ## TOOLS
-HTML
-CSS
-JAVASCRIPT
+- HTML
+- CSS
+- JAVASCRIPT
 
 ## FEATURES
 1. Student login
